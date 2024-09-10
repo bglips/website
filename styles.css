@@ -1,0 +1,94 @@
+/* styles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: #44444E;
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #469161;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Portfolio Styles */
+.portfolio-item {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+    margin-bottom: 20px; /* Space between portfolio items */
+    border: 1px solid #333333; /* Optional: border around portfolio items */
+    padding: 10px; /* Padding inside the border */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #333333;
+    background-color: #555555; /* Slightly different background for items */
+}
+
+.portfolio-item img {
+    width: 80px; /* Fixed width for images */
+    height: 80px; /* Fixed height for images */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.portfolio-item .text-content {
+    flex: 1; /* Expand text content to fill remaining space */
+}
+
+.project-button {
+    display: block;
+    background-color: #469161; /* Main color */
+    color: #ffffff; /* White text */
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-left: 20px; /* Space between text content and button */
+    border: 2px solid #333333;
+}
+
+.project-button:hover {
+    background-color: #46916248; /* Darker shade for hover effect */
+}
