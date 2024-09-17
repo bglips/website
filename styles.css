@@ -58,6 +58,9 @@ footer {
     padding: 10px;
     border-radius: 8px;
     background-color: #555555;
+
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
 }
 
 .portfolio-item img {
@@ -93,14 +96,6 @@ footer {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Stack nav links vertically */
-    }
-
-    nav a {
-        margin: 10px 0; /* More space between nav items */
-    }
-
     .portfolio-item {
         flex-direction: column; /* Stack portfolio items vertically */
         align-items: center; /* Center align items */
