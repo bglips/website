@@ -9,6 +9,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Add this to ensure the footer sticks to the bottom */
 }
 
 header {
@@ -44,7 +45,8 @@ footer {
     background-color: #333;
     color: #eff1f5;
     text-align: center;
-    position: relative;
+    padding: 10px;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
@@ -58,9 +60,6 @@ footer {
     padding: 10px;
     border-radius: 8px;
     background-color: #555555;
-
-    align-items: center; /* Center align items */
-    text-align: center; /* Center text */
 }
 
 .portfolio-item img {
