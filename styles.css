@@ -1,5 +1,3 @@
-/* styles.css */
-
 html, body {
     height: 100%;
     margin: 0;
@@ -25,6 +23,7 @@ nav {
     justify-content: center;
     background: #333;
     padding: 10px;
+    flex-wrap: wrap; /* Allow nav links to wrap on small screens */
 }
 
 nav a {
@@ -53,31 +52,30 @@ footer {
 /* Portfolio Styles */
 .portfolio-item {
     display: flex;
-    align-items: flex-start; /* Align items to the start (top) */
-    margin-bottom: 20px; /* Space between portfolio items */
-    border: 1px solid #333333; /* Optional: border around portfolio items */
-    padding: 10px; /* Padding inside the border */
-    border-radius: 8px; /* Rounded corners */
-    border: 2px solid #333333;
-    background-color: #555555; /* Slightly different background for items */
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #555555;
 }
 
 .portfolio-item img {
-    width: 80px; /* Fixed width for images */
-    height: 80px; /* Fixed height for images */
-    border-radius: 50%; /* Circular images */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin-right: 20px; /* Space between image and text */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .portfolio-item .text-content {
-    flex: 1; /* Expand text content to fill remaining space */
+    flex: 1;
 }
 
 .project-button {
     display: block;
-    background-color: #469161; /* Main color */
-    color: #ffffff; /* White text */
+    background-color: #469161;
+    color: #ffffff;
     padding: 5px 20px;
     border-radius: 8px;
     text-align: center;
@@ -85,10 +83,59 @@ footer {
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-left: 20px; /* Space between text content and button */
+    margin-left: 20px;
     border: 2px solid #333333;
 }
 
 .project-button:hover {
-    background-color: #46916248; /* Darker shade for hover effect */
+    background-color: #46916248;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav links vertically */
+    }
+
+    nav a {
+        margin: 10px 0; /* More space between nav items */
+    }
+
+    .portfolio-item {
+        flex-direction: column; /* Stack portfolio items vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .portfolio-item img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin to separate image and text */
+    }
+
+    .project-button {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin to space out button */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px; /* Smaller font for smaller screens */
+        padding: 15px;
+    }
+
+    .content {
+        max-width: 100%; /* Full width on mobile */
+        padding: 0 10px; /* Less padding on mobile */
+    }
+
+    .portfolio-item img {
+        width: 60px; /* Smaller image for mobile */
+        height: 60px;
+    }
+
+    .project-button {
+        font-size: 14px; /* Smaller button text on mobile */
+        padding: 5px 10px;
+    }
 }
