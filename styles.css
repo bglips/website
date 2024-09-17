@@ -59,8 +59,6 @@ footer {
     border-radius: 8px;
     background-color: #555555;
 
-    align-items: center; /* Center align items */
-    text-align: center; /* Center text */
 }
 
 .portfolio-item img {
