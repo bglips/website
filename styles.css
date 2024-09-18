@@ -1,7 +1,14 @@
+/*
+ * General Styles
+ */
+
 html, body {
     height: 100vh;
     margin: 0;
-    font-family: 'Comfortaa';
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     background-color: #44444E;
     color: #eff1f5;
 }
@@ -11,12 +18,25 @@ body {
     flex-direction: column;
 }
 
+/*
+ * Header Styles
+ */
+
 header {
     background-color: #469161;
     color: #eff1f5;
-    padding: 20px;
     text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    font-optical-sizing: auto;
+    letter-spacing: 3px;
 }
+
+/*
+ * Navigation Styles
+ */
 
 nav {
     display: flex;
@@ -33,12 +53,20 @@ nav a {
     font-weight: bold;
 }
 
+/*
+ * Content Styles
+ */
+
 .content {
     flex: 1;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
 }
+
+/*
+ * Footer Styles
+ */
 
 footer {
     background-color: #333;
@@ -49,7 +77,10 @@ footer {
     width: 100%;
 }
 
-/* Portfolio Styles */
+/*
+ * Portfolio Styles
+ */
+
 .portfolio-item {
     display: flex;
     align-items: flex-start;
@@ -58,7 +89,6 @@ footer {
     padding: 10px;
     border-radius: 8px;
     background-color: #555555;
-
 }
 
 .portfolio-item img {
@@ -92,7 +122,10 @@ footer {
     background-color: #46916248;
 }
 
-/* Media Queries for Mobile Devices */
+/*
+ * Mobile Optimization for Portfolio
+ */
+
 @media (max-width: 768px) {
     .portfolio-item {
         flex-direction: column; /* Stack portfolio items vertically */
@@ -102,7 +135,7 @@ footer {
 
     .portfolio-item img {
         margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add bottom margin to separate image and text */
+        margin-bottom: 10%; /* Add bottom margin to separate image and text */
     }
 
     .project-button {
@@ -111,26 +144,30 @@ footer {
     }
 }
 
+/*
+ * About Section Styles
+ */
+
 .about-container {
-    align-items: center; /* Vertically align content */
-    justify-content: space-between; /* Space between text and banner */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 20px; /* Adds space between the text and the banner */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .about-text {
-    flex: 1; /* Let the text take up remaining space */
-    max-width: 90%; /* Limits the width of the text */
-    margin: 0 auto; /* Centers the text */
-    text-align: left; /* Aligns the text to the left */
+    flex: 1;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .partner-banner img {
-    max-width: 100%; /* Limits the banner image width */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    border: 2px solid #eff1f5; /* Optional border */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    border: 2px solid #eff1f5;
+    transition: transform 0.3s ease;
     margin-top: 20px;
 }
 
@@ -138,15 +175,28 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* For smaller screens, stack content vertically */
+/*
+ * Media Queries for Mobile Devices
+ */
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
+        padding: 0 10px; /* Add padding to prevent content from touching screen edges */
     }
 
     .about-text, .partner-banner img {
-        max-width: 100%;
-        text-align: center;
+        max-width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center text and image */
+    }
+
+    .about-text {
+        margin-bottom: 20px; /* Add margin to space content on mobile */
+    }
+
+    .partner-banner img {
+        margin: 0 auto; /* Center the banner image on smaller screens */
     }
 }
+
 
