@@ -110,3 +110,43 @@ footer {
         margin-top: 10px; /* Add top margin to space out button */
     }
 }
+
+.about-container {
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space between text and banner */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Adds space between the text and the banner */
+}
+
+.about-text {
+    flex: 1; /* Let the text take up remaining space */
+    max-width: 90%; /* Limits the width of the text */
+    margin: 0 auto; /* Centers the text */
+    text-align: left; /* Aligns the text to the left */
+}
+
+.partner-banner img {
+    max-width: 100%; /* Limits the banner image width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    border: 2px solid #eff1f5; /* Optional border */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px;
+}
+
+.partner-banner img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* For smaller screens, stack content vertically */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text, .partner-banner img {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
