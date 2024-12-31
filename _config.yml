@@ -1,11 +1,2 @@
 # Enable pretty URLs
 permalink: pretty
-
-# Exclude files and directories from processing (optional)
-exclude:
-  - README.md
-  - node_modules/
-  - .gitignore
-
-# Plugins (optional)
-plugins: []
