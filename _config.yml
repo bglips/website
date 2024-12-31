@@ -1,0 +1,17 @@
+# Enable pretty URLs
+permalink: pretty
+
+# Site settings (optional)
+title: Exhausted Yami
+description: Exhausted Yami's personal site
+baseurl: "" # Leave empty unless your site is hosted in a subdirectory
+url: "https://exhausted.site" # Your website's URL
+
+# Exclude files and directories from processing (optional)
+exclude:
+  - README.md
+  - node_modules/
+  - .gitignore
+
+# Plugins (optional)
+plugins: []
