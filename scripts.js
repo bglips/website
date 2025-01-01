@@ -1,5 +1,6 @@
 // scripts.js
 
+
 // Function to resize images
 function resizeImages(selector, width, height) {
     const images = document.querySelectorAll(selector);

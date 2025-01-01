@@ -1,202 +1,182 @@
-/*
- * General Styles
- */
+/* Define font face */
+@font-face {
+  font-family: "main-font";
+  src: url("src/fonts/04B_30.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-html, body {
-    height: 100vh;
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #44444E;
-    color: #eff1f5;
+/* Global styles */
+:root {
+  --primary-color: #1e1e2e;
+  --secondary-color: #eff1f5;
+  --background-color: #181825;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: "main-font", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
 }
 
-/*
- * Header Styles
- */
-
-header {
-    background-color: #469161;
-    color: #eff1f5;
-    text-align: center;
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 26px;
-    font-optical-sizing: auto;
-    letter-spacing: 3px;
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 10px;
 }
 
-/*
- * Navigation Styles
- */
-
-nav {
-    display: flex;
-    justify-content: center;
-    background: #333;
-    padding: 10px;
-    flex-wrap: wrap; /* Allow nav links to wrap on small screens */
+.navbar a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-nav a {
-    color: #eff1f5;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+.navbar a:hover {
+  transform: scale(1.1);
 }
 
-/*
- * Content Styles
- */
+.navbar p {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+  position: absolute;
+  left: 1%;
+  font-size: 14px;
+}
 
+/* Content styles */
 .content {
-    flex: 1;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
 }
 
-/*
- * Footer Styles
- */
-
-footer {
-    background-color: #333;
-    color: #eff1f5;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.content h2 {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid var(--secondary-color);
+  margin-right: auto;
 }
 
-/*
- * Portfolio Styles
- */
-
-.portfolio-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    border: 1px solid #333333;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #555555;
+.content p {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
 }
 
-.portfolio-item img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
+.content hr {
+  border: 2px solid var(--background-color);
+  margin: 20px;
+  border-radius: 5px;
 }
 
-.portfolio-item .text-content {
-    flex: 1;
-}
-
-.project-button {
-    display: block;
-    background-color: #469161;
-    color: #eff1f5;
-    padding: 5px 20px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-left: 20px;
-    border: 2px solid #333333;
-}
-
-.project-button:hover {
-    background-color: #46916248;
-}
-
-/*
- * Mobile Optimization for Portfolio
- */
-
-@media (max-width: 768px) {
-    .portfolio-item {
-        flex-direction: column; /* Stack portfolio items vertically */
-        align-items: center; /* Center align items */
-        text-align: center; /* Center text */
-    }
-
-    .portfolio-item img {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 10%; /* Add bottom margin to separate image and text */
-    }
-
-    .project-button {
-        margin-left: 0; /* Remove left margin */
-        margin-top: 10px; /* Add top margin to space out button */
-    }
-}
-
-/*
- * About Section Styles
- */
-
-.about-container {
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.about-text {
-    flex: 1;
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: left;
-}
-
+/* Partner banner styles */
 .partner-banner img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid #eff1f5;
-    transition: transform 0.3s ease;
-    margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid var(--secondary-color);
 }
 
 .partner-banner img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.02);
 }
 
-/*
- * Media Queries for Mobile Devices
- */
+/* Social Links styles */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  padding: 5%;
+}
 
+.links a {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.links a:hover {
+  background-color: #313244;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        padding: 0 10px; /* Add padding to prevent content from touching screen edges */
-    }
+  .navbar {
+    flex-direction: column;
+    padding: 5px;
+  }
 
-    .about-text, .partner-banner img {
-        max-width: 100%; /* Full width for smaller screens */
-        text-align: center; /* Center text and image */
-    }
+  .navbar a, .navbar p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
 
-    .about-text {
-        margin-bottom: 20px; /* Add margin to space content on mobile */
-    }
+  .content {
+    padding: 10px;
+    margin: 10px;
+  }
 
-    .partner-banner img {
-        margin: 0 auto; /* Center the banner image on smaller screens */
-    }
+  .content h2 {
+    font-size: 16px;
+    padding: 8px;
+    border: 3px solid var(--secondary-color);
+  }
+
+  .links a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .partner-banner img {
+    width: 90%; /* Reduce size slightly for smaller screens */
+    max-width: 100%;
+  }
 }
 
+@media (max-width: 480px) {
+  .navbar a, .navbar p {
+    font-size: 10px;
+  }
 
+  .content h2 {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .partner-banner img {
+    width: 100%; /* Make the image fully responsive */
+  }
+}
