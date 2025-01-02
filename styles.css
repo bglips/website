@@ -1,7 +1,7 @@
 /* Define font face */
 @font-face {
   font-family: "main-font";
-  src: url("src/fonts/04B_30.ttf") format("truetype");
+  src: url("../src/fonts/04B_30.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
