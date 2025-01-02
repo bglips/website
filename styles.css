@@ -59,6 +59,24 @@ body {
   left: 1%;
 }
 
+/* Mobile-specific Navbar styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px; /* Add some padding */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Add margin for spacing between links */
+  }
+
+  .navbar p {
+    position: static; /* Remove absolute positioning */
+    margin-bottom: 10px; /* Add spacing below the paragraph */
+  }
+}
+
 /* Content styles */
 .content {
   display: flex;
