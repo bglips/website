@@ -10,7 +10,24 @@
 <body>
     <nav class="navbar">
         <p>Exhausted Yami</p>
-        <a href="/">Home</a><a href="/portfolio">Portfolio</a><a href="/socials">Socials</a>
+
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/socials">Socials</a>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/socials">Socials</a>
+        </div>
     </nav>
     <div class="content">
         <h2>About Me</h2>
@@ -24,5 +41,14 @@
         </section>
     </div>
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" integrity="sha256-<hash_value>" data-id="ExhaustedYami" data-description="Support me on Buy me a coffee!" data-message="Donate to help create more content" data-color="#26B0A1" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
