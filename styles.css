@@ -182,6 +182,7 @@ body {
   border-radius: 10px;
   font-weight: bold;
   font-size: 30px;
+  font-family: "Nunito", sans-serif;
   transition: background-color 0.2s ease;
   margin-bottom: 10px;
   width: 100%;
