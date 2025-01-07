@@ -1,3 +1,16 @@
+
+@font-face {
+    font-family: '04b30';
+    src: url('https://exhausted.site/src/fonts/04b_30__-webfont.eot');
+    src: url('https://exhausted.site/src/fonts/04b_30__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://exhausted.site/src/fonts/04b_30__-webfont.woff') format('woff'),
+         url('https://exhausted.site/src/fonts/04b_30__-webfont.ttf') format('truetype'),
+         url('https://exhausted.site/src/fonts/04b_30__-webfont.svg#04b30') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
   --primary-color: #1e1e2e;
   --secondary-color: #eff1f5;
@@ -123,10 +136,13 @@ body {
   border-radius: 10px;
   border: 5px solid var(--secondary-color);
   margin-right: auto;
+  font-family: "04b30", Arial, sans-serif;
+  font-weight: normal;
 }
 
 .content p {
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
 }
 
 .content hr {
