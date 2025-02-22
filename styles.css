@@ -11,8 +11,8 @@
 
 :root {
   --primary-color: #1e1e2e;
-  --default-text-color: white;
-  --header-text-color: white;
+  --default-text-color: #fffff;
+  --header-text-color: #ffffff;
   --background-color: #181824;
   --highlight-color: #313244;
 }
