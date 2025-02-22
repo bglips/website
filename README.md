@@ -22,11 +22,11 @@ The website is built with HTML, CSS, and JavaScript.
 - **Mobile menu**: A hamburger menu for mobile users.
 - **Partner banner**: Displays a banner of our partner Bisecthosting.
 - **Footer**: A fixed footer that stays at the bottom of the screen.
-  
+
 ## Tech Stack
 
 - **HTML**: Markup for the structure of the website.
-- **CSS**: Styling using modern CSS techniques like Flexbox and CSS Variables.
+- **CSS**: Styling for the website.
 - **JavaScript**: For interactive features (e.g., mobile menu toggle).
 - **Font**: [Nunito](https://fonts.google.com/specimen/Nunito)
 
