@@ -10,6 +10,7 @@ This repository contains the code for my personal website.
 - [License](#license)
 
 ## Overview
+
 This website is a simple personal site built to showcase my portfolio and provide links to my social media platforms.
 
 The website is built with HTML, CSS, and JavaScript.
