@@ -37,7 +37,7 @@ The website is built with HTML, CSS, and JavaScript. It is fully responsive and 
 
 To get started with the website on your local machine:
 
-1. Clone the repository: ```git clone https://github.com/your-username/my-website.git```
+1. Clone the repository: ```git clone https://github.com/exhausted-yami/website.git```
 
 2. Navigate into the project directory: ```cd my-website```
 
