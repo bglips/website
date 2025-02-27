@@ -148,7 +148,7 @@ hr {
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background: #333;
+  background: var(--text-color);
   transition: all 0.3s ease;
 }
 
@@ -175,8 +175,8 @@ hr {
 .mobile-menu a {
   display: block;
   padding: 1rem 2rem;
-  color: #333;
-  border-bottom: 1px solid #f1f1f1;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--header-color);
 }
 
 .mobile-menu a:hover {
