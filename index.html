@@ -3,68 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description" content="Exhausted Yami - Content Creator, Minecraft Modder, and Developer of PhantomBot">
+    <title>Home | Exhausted Yami</title>
     <link rel="icon" href="../assets/images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <!-- Add Open Graph tags for better social sharing -->
+    <meta property="og:title" content="Exhausted Yami">
+    <meta property="og:description" content="Content creator with a passion for gaming, coding, and role-playing">
+    <meta property="og:image" content="../assets/images/og-image.jpg">
+    <meta property="og:url" content="https://exhausted.site">
 </head>
 <body>
-
-    <!-- Navbar -->
+    <!-- Header -->
     <header class="navbar">
-        <p class="logo">Exhausted Yami</p>
+            <p class="logo">Exhausted Yami</p>
 
-        <nav class="menu">
-            <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-        </nav>
+            <!-- Desktop Navigation -->
+            <nav class="menu" aria-label="Primary Navigation">
+                <a href="/">Home</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+            </nav>
 
-        <button class="hamburger" aria-label="Toggle mobile menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <!-- Mobile Menu Button -->
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <nav class="mobile-menu" aria-hidden="true">
-            <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-        </nav>
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation" aria-hidden="true">
+                <a href="/">Home</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+            </nav>
     </header>
 
+
     <!-- Main Content -->
-    <main class="content">
-        <section>
-            <h2>About Me</h2>
-            <p>Hey, I'm Yami! I'm a content creator with a passion for gaming, coding, and role-playing. I develop Minecraft mods (mostly private), including the soon-to-be-announced Creator+ and Paradox Tales mods. I'm also working on a feature-packed Discord bot called PhantomBot. <br><br> So yeah, I do a lot of things—maybe too many for one person! But hey, that's just a theory. A Game Theory! Thanks for stopping by!</p>
-        </section>
-
-        <hr>
-
-        <!-- Sponsored Ad -->
-        <section class="sponsored">
-            <h2>Sponsored Ad</h2>
-            <div class="partner-banner">
-                <a href="https://bisecthosting.com/ExhaustedCraft">
-                    <img src="../assets/images/BiscectHosting-Partnership.png" alt="BisectHosting Partner Banner">
-                </a>
+    <main>
+        <div class="container">
+            <div class="content">
+                <section class="about-section">
+                    <h2>About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>I'm a content creator with a passion for gaming, coding, and role-playing. I develop Minecraft mods (mostly private), including the soon-to-be-announced Creator+ and Paradox Tales mods. I'm also working on a feature-packed Discord bot called PhantomBot.<br><br>So yeah, I do a lot of things—maybe too many for one person! But hey, that's just a theory. A Game Theory! Thanks for stopping by!</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <!-- Sponsored Ad -->
+                <section class="sponsored">
+                    <h2>Sponsored Ad</h2>
+                    <div class="partner-banner">
+                        <a href="https://bisecthosting.com/ExhaustedCraft" target="_blank" rel="noopener">
+                            <img src="assets/images/BiscectHosting-Partnership.png" alt="BisectHosting Partner Banner">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="content">
+                <!-- Featured Projects Section -->
+                <section class="featured-section">
+                    <h2>Featured Projects</h2>
+                    <div class="portfolio-grid">
+                        <!-- Project 1 -->
+                        <article class="portfolio-item">
+                            <div class="portfolio-image" style="background-color: #70b085;">
+                                <!-- Placeholder for project image -->
+                            </div>
+                            <div class="portfolio-content">
+                            <h3 class="portfolio-title">YARPGAM (COMING SOON) </h3>
+                            <p>Yet Another RPG Anime Mod (YARPGAM) is an RPG-inspired mod that brings anime and fantasy elements into the world of Minecraft. This mod introduces a variety of new weapons, NPCs, food, and more, all while keeping Minecraft well Minecraft.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Minecraft</span>
+                                <span class="portfolio-tag">Java</span>
+                                <span class="portfolio-tag">Forge</span>
+                            </div>
+                            </div>
+                        </article>
+                        
+                        <!-- Project 2 -->
+                        <article class="portfolio-item">
+                            <div class="portfolio-image" style="background-color: #845ec2;">
+                                <!-- Placeholder for project image -->
+                            </div>
+                            <div class="portfolio-content">
+                            <h3 class="portfolio-title">Exhausted.site</h3>
+                            <p>My personal website built with HTML, CSS, and JavaScript. Hosted on GitHub Pages with Cloudflare DNS management.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">HTML</span>
+                                <span class="portfolio-tag">CSS</span>
+                                <span class="portfolio-tag">JavaScript</span>
+                            </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/portfolio" class="btn">View All Projects</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Exhausted Yami. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2025 Exhausted Yami. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Scripts -->
     <script>
+        // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.querySelector('.mobile-menu');
 
         hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle mobile menu
             mobileMenu.classList.toggle('open');
             hamburger.classList.toggle('open');
+            
+            // Update accessibility attributes
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.setAttribute('aria-hidden', isExpanded);
+            
+            // Animate hamburger icon
             const spans = hamburger.querySelectorAll('span');
             if (hamburger.classList.contains('open')) {
                 spans[0].style.transform = "translateY(8px) rotate(45deg)";
@@ -76,7 +155,16 @@
                 spans[2].style.transform = "translateY(0) rotate(0)";
             }
         });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
-    
 </body>
 </html>

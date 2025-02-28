@@ -3,43 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Exhausted Yami's portfolio - Showcasing Minecraft mods, Discord bots, and other coding projects">
+    <title>Portfolio | Exhausted Yami</title>
     <link rel="icon" href="../assets/images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+</head>
 <body>
-
-    <!-- Navbar -->
+    <!-- Header -->
     <header class="navbar">
-        <p class="logo">Exhausted Yami</p>
+            <p class="logo">Exhausted Yami</p>
 
-        <!-- Desktop Navigation -->
-        <nav class="menu">
-            <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-        </nav>
+            <!-- Desktop Navigation -->
+            <nav class="menu" aria-label="Primary Navigation">
+                <a href="/">Home</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+            </nav>
 
-        <!-- Mobile Menu Button -->
-        <button class="hamburger" aria-label="Toggle mobile menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <!-- Mobile Menu Button -->
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <!-- Mobile Navigation -->
-        <nav class="mobile-menu" aria-hidden="true">
-            <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-        </nav>
-    </header>
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation" aria-hidden="true">
+                <a href="/">Home</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+            </nav>
+        </header>
 
-    <!-- Main Content -->
-    <main class="content">
-        <h2>Portfolio</h2>
-        <p>This page is currently under construction. Stay tuned for updates!</p>
-        <hr>
+        <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="content">
+                <section class="text-center">
+                    <h1>My Projects</h1>
+                    <p>Welcome to my portfolio! Here you'll find a collection of my coding projects, Minecraft mods, and other creative endeavors.</p>
+                </section>
+
+                <section class="mt-5">
+                    <div class="portfolio-grid">
+
+                    <!-- YARPGAM Mod -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image" style="background-color: #70b085;"></div>
+                        <div class="portfolio-content">
+                        <h3 class="portfolio-title">YARPGAM (COMING SOON) </h3>
+                        <p>Yet Another RPG Anime Mod (YARPGAM) is an RPG-inspired mod that brings anime and fantasy elements into the world of Minecraft. This mod introduces a variety of new weapons, NPCs, food, and more, all while keeping Minecraft well Minecraft.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Minecraft</span>
+                            <span class="portfolio-tag">Java</span>
+                            <span class="portfolio-tag">NeoForge</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Phantom Bot -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image" style="background-color: #845ec2;"></div>
+                        <div class="portfolio-content">
+                        <h3 class="portfolio-title">Exhausted.site</h3>
+                        <p>My personal website built with HTML, CSS, and JavaScript. Hosted on GitHub Pages with Cloudflare DNS management.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS</span>
+                            <span class="portfolio-tag">JavaScript</span>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
