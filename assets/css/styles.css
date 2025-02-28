@@ -136,56 +136,7 @@ hr {
   width: 100%;
 }
 
-/* 5. MOBILE NAVIGATION */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 0;
-  background: var(--text-color);
-  transition: all 0.3s ease;
-}
-
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: var(--header-color);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(-10px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.mobile-menu.open {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.mobile-menu a {
-  display: block;
-  padding: 1rem 2rem;
-  color: var(--text-color);
-  border-bottom: 1px solid var(--header-color);
-}
-
-.mobile-menu a:hover {
-  background-color: var(--header-color);
-}
-
-/* 6. FOOTER */
+/* 5. FOOTER */
 .footer {
   position: relative;
   bottom: 0;
@@ -199,7 +150,7 @@ hr {
   z-index: 1000;
 }
 
-/* 7. COMPONENTS */
+/* 6. COMPONENTS */
 
 /* Sponsored Section */
 .sponsored {
@@ -288,7 +239,7 @@ hr {
   flex-direction: column;
 }
 
-/* Optional: Add a subtle indicator that the item is clickable */
+/* Add a subtle indicator that the item is clickable */
 .portfolio-link .portfolio-content::after {
   content: "→";
   position: absolute;
@@ -310,7 +261,7 @@ hr {
   padding-bottom: 40px; /* Add some space for the arrow */
 }
 
-/* 8. MEDIA QUERIES */
+/* 7. MEDIA QUERIES */
 @media (max-width: 768px) {
   .menu {
       display: none;
@@ -352,7 +303,7 @@ hr {
 }
 
 /* 9. UTILITY CLASSES */
-.text-center { text-align: center; }
+.text-center { text-align: center; color: var(--text-color); }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 
@@ -375,3 +326,52 @@ hr {
 .p-5 { padding: 2.5rem; }
 
 .hidden { display: none !important; }
+
+/* 8. MOBILE NAVIGATION */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--header-color);
+}
+
+.mobile-menu a:hover {
+  background-color: var(--header-color);
+}
