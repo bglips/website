@@ -303,7 +303,7 @@ hr {
 }
 
 /* 9. UTILITY CLASSES */
-.text-center { text-align: center; color: var(--text-color); }
+.text-center { text-align: center; color: var(--text-color);}
 .text-right { text-align: right; }
 .text-left { text-align: left; }
 
