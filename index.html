@@ -25,28 +25,28 @@
 <body>
     <!-- Header -->
     <header class="navbar">
-            <p class="logo">Exhausted Yami</p>
+        <p class="logo">Exhausted Yami</p>
 
-            <!-- Desktop Navigation -->
-            <nav class="menu" aria-label="Primary Navigation">
-                <a href="/">Home</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-            </nav>
+        <!-- Desktop Navigation -->
+        <nav class="menu" aria-label="Primary Navigation">
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+        </nav>
 
-            <!-- Mobile Menu Button -->
-            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <!-- Mobile Menu Button -->
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-            <!-- Mobile Navigation -->
-            <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation" aria-hidden="true">
-                <a href="/">Home</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
-            </nav>
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation" aria-hidden="true">
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="https://woosh.link/exhaustedyami.bsky.social">Socials</a>
+        </nav>
     </header>
 
 
@@ -138,43 +138,12 @@
 
     <!-- Scripts -->
     <script>
-        // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.querySelector('.mobile-menu');
-
         hamburger.addEventListener('click', () => {
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-            
-            // Toggle mobile menu
             mobileMenu.classList.toggle('open');
-            hamburger.classList.toggle('open');
-            
-            // Update accessibility attributes
-            hamburger.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.setAttribute('aria-hidden', isExpanded);
-            
-            // Animate hamburger icon
-            const spans = hamburger.querySelectorAll('span');
-            if (hamburger.classList.contains('open')) {
-                spans[0].style.transform = "translateY(8px) rotate(45deg)";
-                spans[1].style.opacity = "0";
-                spans[2].style.transform = "translateY(-8px) rotate(-45deg)";
-            } else {
-                spans[0].style.transform = "translateY(0) rotate(0)";
-                spans[1].style.opacity = "1";
-                spans[2].style.transform = "translateY(0) rotate(0)";
-            }
-        });
-
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });
     </script>
+    
 </body>
 </html>

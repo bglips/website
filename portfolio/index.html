@@ -7,7 +7,7 @@
     <meta name="description" content="Exhausted Yami's portfolio - Showcasing Minecraft mods, Discord bots, and other coding projects">
     
     <meta name="google-adsense-account" content="ca-pub-8236346806110135">
-    
+
     <title>Portfolio | Exhausted Yami</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,24 +97,14 @@
         <p>&copy; 2025 Exhausted Yami. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script>
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.querySelector('.mobile-menu');
-
         hamburger.addEventListener('click', () => {
             mobileMenu.classList.toggle('open');
-            hamburger.classList.toggle('open');
-            const spans = hamburger.querySelectorAll('span');
-            if (hamburger.classList.contains('open')) {
-                spans[0].style.transform = "translateY(8px) rotate(45deg)";
-                spans[1].style.opacity = "0";
-                spans[2].style.transform = "translateY(-8px) rotate(-45deg)";
-            } else {
-                spans[0].style.transform = "translateY(0) rotate(0)";
-                spans[1].style.opacity = "1";
-                spans[2].style.transform = "translateY(0) rotate(0)";
-            }
         });
     </script>
+
 </body>
 </html>
