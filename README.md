@@ -1,13 +1,15 @@
-# Exhausted.Site - Yami's Website
+# Bglips - Yami's Website
 
 This repository contains the code for my personal website.
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [License](#license)
+- [Bglips - Yami's Website](#bglips---yamis-website)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+    - [License](#license)
 
 ## Overview
 
