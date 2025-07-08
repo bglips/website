@@ -1,10 +1,10 @@
-# Bglips - Yami's Website
+# Bglips.xyz
 
 This repository contains the code for my personal website.
 
 ## Table of Contents
 
-- [Bglips - Yami's Website](#bglips---yamis-website)
+- [Bglips.xyz](#bglips.xyz)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Features](#features)
